@@ -1,7 +1,17 @@
 {
+    "include": [ "src/**/*" ],
     "compilerOptions": {
-        "esModuleInterop": true,
+        "target": "es6",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
         "skipLibCheck": true,
-        "sourceMap": true
+        "sourceMap": true,
+        "inlineSources": true,
+        "declaration": true,
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "strict": true,
+        "allowSyntheticDefaultImports": true
     }
 }

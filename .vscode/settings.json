@@ -1,0 +1,33 @@
+{
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit"
+    },
+
+    "eslint.enable": true,
+    "eslint.format.enable": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    },
+
+    "files.watcherExclude": {
+        "node_modules/**": true,
+        "dist/**": true,
+    },
+
+    "json.format.keepLines": true,
+
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.expand": false,
+    "explorer.fileNesting.patterns": {
+        "README.md": "*.md, LICENSE",
+        "*.ts": "${capture}.test.ts",
+        "tsconfig.json": "tsconfig*.json, *.d.ts, *.tsbuildinfo",
+        "package.json": "package-lock.json",
+        ".editorconfig": ".eslintrc.json",
+        "vite.config.ts": "vite.build.ts",
+    },
+}

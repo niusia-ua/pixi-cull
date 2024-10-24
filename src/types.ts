@@ -1,12 +1,15 @@
-import * as PIXI from 'pixi.js'
-export interface AABB {
+import type { Container } from 'pixi.js';
+
+export interface AABB
+{
     x: number
     y: number
     width: number
     height: number
 }
 
-export interface DisplayObjectSpatial {
+export interface DisplayObjectSpatial
+{
     xStart?: number
     yStart?: number
     xEnd?: number
@@ -14,7 +17,8 @@ export interface DisplayObjectSpatial {
     hashes: string[]
 }
 
-export interface DisplayObjectWithCulling extends PIXI.DisplayObject {
+export interface DisplayObjectWithCulling extends Container
+{
     staticObject?: boolean
     AABB?: AABB
     dirty?: boolean

@@ -1,9 +1,10 @@
 {
     "private": true,
     "type": "module",
-    "main": "dist/pixi_cull.umd.js",
-    "module": "dist/pixi_cull.js",
-    "types": "dist/index.d.ts",
+    "main": "./dist/pixi_cull.umd.js",
+    "module": "./dist/pixi_cull.js",
+    "types": "./dist/index.d.ts",
+    "files": [ "./dist/" ],
     "author": "David Figatner",
     "license": "MIT",
     "scripts": {

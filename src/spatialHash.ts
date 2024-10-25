@@ -323,8 +323,8 @@ export class SpatialHash
     {
         const box = object.getLocalBounds();
         const AABB = object.AABB = {
-            x: (object.x + (box.x - object.pivot.x)) * object.scale.x,
-            y: (object.y + (box.y - object.pivot.y)) * object.scale.y,
+            x: object.x + ((box.x - object.pivot.x) * object.scale.x),
+            y: object.y + ((box.y - object.pivot.y) * object.scale.y),
             width: box.width * object.scale.x,
             height: box.height * object.scale.y
         };
